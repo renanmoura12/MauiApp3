@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiApp3.MainLayout"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiApp3.Pages"
+    FlyoutBackgroundImageAspect="AspectFit"
+    FlyoutVerticalScrollMode="Auto"
+    FlyoutIcon="icon.svg">
+    
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems" Shell.TabBarIsVisible="False" >
+        <Shell.ItemTemplate>
+            <DataTemplate>
+                <Grid ColumnDefinitions="0.25*,0,75*" Padding="0,10">
+                    <Image Source="{Binding Icon}"
+                           HeightRequest="80"
+                           HorizontalOptions="Center"/>
+                    <Label Grid.Column="1"
+                           Text="{Binding Title}"
+                           FontSize="Small"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center"/>
+                </Grid>
+            </DataTemplate>
+        </Shell.ItemTemplate>
+        <ShellContent Title="Pagina teste" Icon="icon.svg" ContentTemplate="{DataTemplate local:HomeApp}" ></ShellContent>
+        <ShellContent Title="Web Page" Icon="icon.svg" ContentTemplate="{DataTemplate local:HomeWebView}"></ShellContent>
+        <ShellContent Title="botões" Icon="icon.svg" ContentTemplate="{DataTemplate local:NewPage1}"></ShellContent>
+    </FlyoutItem>
+</Shell>

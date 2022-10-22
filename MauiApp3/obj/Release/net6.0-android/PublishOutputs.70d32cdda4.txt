@@ -1,0 +1,3 @@
+C:\Users\Renan Moura\source\repos\MauiApp3\MauiApp3\bin\Release\net6.0-android\publish\com.companyname.mauiapp3-Signed.aab
+C:\Users\Renan Moura\source\repos\MauiApp3\MauiApp3\bin\Release\net6.0-android\publish\com.companyname.mauiapp3.aab
+C:\Users\Renan Moura\source\repos\MauiApp3\MauiApp3\bin\Release\net6.0-android\publish\com.companyname.mauiapp3-Signed.apk
